@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="front_end.js" defer></script>
+    <title>CSE 6452</title>
+</head>
+<body>
+<div class="container">
+    <h1>&#x2728;CS6452 Music Search Engine &#x2728;</h1>
+    <div class="search-wrapper">
+        <input type="search" name="searchBar" id="searchBar" placeholder="Search..." data-search>
+        <button type="submit" id="search_btn">Search</button>
+    </div>
+
+    <div class="cover-image">
+        <img src="cover_image.png" title="img ref: https://www.techradar.com/reviews/spotify">
+    </div>
+
+    <div class="show-container hide">
+        <div class="image-space">
+            <iframe id="image-frame" src="d3graph" frameborder="0" width="700" height="550" scrolling="no"></iframe>
+        </div>
+        <div class="music-list">
+            <h3 id="list-title">Recommendation List (Top 5)</h3>
+            <p>provide interest <br> improve performance</p>
+            <div class="user-cards" data-user-cards-container></div>
+            <button type="submit" id="add_btn">Add</button>
+            <p class="submit-message hide">Interest Submitted</p>
+        </div>
+
+        <template data-user-template>
+            <div class="data-container">
+                <div class="card">
+                    <div class="music-content">
+                        <div class="header" data-header></div>
+                    </div>
+                </div>
+
+                <label class="checkbox-container">
+                    <input type="checkbox" id="myCheck" onclick="">
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+        </template>
+    </div>
+
+    <div class="wrap">
+        <h3 class="likert-header">Do you like our idea?</h3>
+        <ul class='likert'>
+            <li>
+                <input type="radio" name="likert" value="strong_agree" id="rd5">
+                <label>Strongly agree</label>
+            </li>
+            <li>
+                <input type="radio" name="likert" value="strong_agree" id="rd4">
+                <label>Agree</label>
+            </li>
+            <li>
+                <input type="radio" name="likert" value="strong_agree" id="rd3">
+                <label>Neutral</label>
+            </li>
+            <li>
+                <input type="radio" name="likert" value="disagree" id="rd2">
+                <label>Disagree</label>
+            </li>
+            <li>
+                <input type="radio" name="likert" value="strong_agree" id="rd1">
+                <label>Strongly disagree</label>
+            </li>
+        </ul>
+
+        <button type="submit" id="likert_btn">Submit</button>
+    </div>
+</body>
+</html>
