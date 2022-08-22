@@ -67,13 +67,3 @@ C. See data preparation and feature engineering
 
 - Feel free to answer the likert question and choose your satisfied recommendation by clicking on those checkboxes on the website, providing some suggestions to improve the system.
 
-
-
----- !! Important Notes !! ----
-
-1. Currently, the graph is based on the test data, not the real search results. (Will be finished by 07/17) 
-
-2. Recommendation lists isn't displayed. (Will be finished by 07/17) 
-
--------------------------------
-
